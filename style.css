@@ -58,3 +58,7 @@ body {
     flex-direction: column;
   }
 }
+
+#spinner {
+  display: none;
+}

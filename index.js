@@ -8,17 +8,16 @@ function openWhatsApp() {
   window.open(url, "_blank");
 }
 
-document.querySelector("#hireMe").onclick = function () {
-  const url = "hireme.html";
-  location.href = url;
-};
+function downloadPdf() {
+  // Ganti URL_PDF dengan URL atau path file PDF yang ingin Anda unduh
+  const URL_PDF = "UC-cb7d3b62-5d7c-4a5f-9e07-9afe075548ff.pdf";
 
-function simulateLoading() {
-  document.querySelector(".spinner-container").style.display = "block";
+  // Membuat elemen <a> baru dengan atribut download
+  const downloadLink = document.createElement("");
+  downloadLink.href = URL_PDF;
+  downloadLink.download = "UC-cb7d3b62-5d7c-4a5f-9e07-9afe075548ff.pdf"; // Nama file saat diunduh (bisa diganti sesuai keinginan)
 
-  setTimeout(hideSpinner, 3000);
-}
-
-function hideSpinner() {
-  document.querySelector(".spinner-container").style.display = "none";
+  // Simulasikan klik pada elemen <a> untuk memulai pengunduhan
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
 }
