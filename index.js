@@ -8,16 +8,15 @@ function openWhatsApp() {
   window.open(url, "_blank");
 }
 
-function downloadPdf() {
-  // Ganti URL_PDF dengan URL atau path file PDF yang ingin Anda unduh
-  const URL_PDF = "UC-cb7d3b62-5d7c-4a5f-9e07-9afe075548ff.pdf";
+function composeEmail() {
+  const recipient = "sryadit5@gmail.com"; // Ganti dengan alamat email tujuan
+  const subject = "Subjek Email";
+  const body = "Isi email Anda disini...";
 
-  // Membuat elemen <a> baru dengan atribut download
-  const downloadLink = document.createElement("");
-  downloadLink.href = URL_PDF;
-  downloadLink.download = "UC-cb7d3b62-5d7c-4a5f-9e07-9afe075548ff.pdf"; // Nama file saat diunduh (bisa diganti sesuai keinginan)
+  const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
 
-  // Simulasikan klik pada elemen <a> untuk memulai pengunduhan
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
+  // Buka halaman komposisi email dalam tab baru
+  window.open(mailtoLink, "_blank");
 }
