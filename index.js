@@ -20,3 +20,8 @@ function composeEmail() {
   // Buka halaman komposisi email dalam tab baru
   window.open(mailtoLink, "_blank");
 }
+
+function privacy() {
+  const url = "privacy&policy.html";
+  window.open(url, "_blank");
+}

@@ -1,5 +1,5 @@
 import { URL } from "url";
 
-const sryadit = new URL("https://0f7d-140-213-35-86.ngrok-free.app/");
+const sryadit = new URL("http://127.0.0.1:5500/");
 
 sryadit.host = "www.suryaaditiya.com";
